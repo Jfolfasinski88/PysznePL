@@ -1,0 +1,27 @@
+
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Ranchers', cursive;
+}
+
+.all-view {
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px groove black;
+}
+.margin-bottom {
+    margin-bottom: 1rem;
+}
+input:focus{
+    outline: none;
+    border: 2px solid red;
+}
+input:hover {
+    background-color: rgb(255, 240, 220);
+
+}
+#pizza {
+    margin-top: 10px;
+}

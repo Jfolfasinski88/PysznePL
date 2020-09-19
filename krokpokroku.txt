@@ -1,0 +1,5 @@
+select z wyborem pizzy
+chechbox z wyborem sosów
+input  z imie nazwisko telefon email
+textarea - z wiadomością dla kucharza
+button do wysłania z zamówienia
