@@ -9,6 +9,9 @@ let order = {
     text: '',
     napoje: []
 }
+
+
+
 idBtn.addEventListener("click", takeOrder)
 function sprawdzaniecheckBox(nazwaKlasy) {
     console.log(nazwaKlasy)
@@ -36,10 +39,37 @@ function takeOrder() {
     const tel = document.getElementById('tel').value
     order.tel = tel
     // pobieram adress
-    const adress = document.getElementById('adress')
+    const adress = document.getElementById('adress').value
     order.adress = adress
     // pobieram textarea 
     const msg = document.getElementById('msg').value
     order.text = msg
-    console.log("takeOrder -> nameC", order)
+    // console.log("takeOrder -> nameC", order)
+
+    // pobieranie selecta
+    const pizzaSelect = document.getElementById('pizza').value
+    console.log("takeOrder -> pizzaSelect", pizzaSelect)
+if(pizzaSelect =="0"){
+alert("Wpierw wybier Pizze !!! ")
+}else{
+    order.pizza = pizzaSelect
+}
+if(order.adress !== '' && order.email !== '' &&
+ order.name !== '' &&  order.napoje.length > 0 &&
+  order.sosy.length > 0 && order.tel !== '' ) {
+console.log(order)
+} else {
+    alert('uzupełnij zamówienie')
+}
+order = {
+    pizza: '',
+    sosy: [],
+    name: '',
+    adress: '',
+    email: '',
+    tel: '',
+    text: '',
+    napoje: []
+}
+
 }
