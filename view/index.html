@@ -1,55 +1,54 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        <Pyszne class="pl"></Pyszne>
-    </title>
-    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <title>Pyszne.pl</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-
 </head>
-
 <body>
-    <h1>
+    <h1 style="text-align: center;">
         Pyszne Pl
     </h1>
     <div class="all-view" id="main-div">
-        <select name="Pizza" id="Pizza" class="margin-bottom">
-            <br>
+        <select name="pizza" id="pizza" class="margin-bottom">
             <option value="0">-</option>
-            <option value="1">Margerita</option>
-            <option value="2">Pepperoni</option>
+            <option value="1">Margarita</option>
+            <option value="2">Peperon</option>
             <option value="3">Wiejska</option>
             <option value="4">Hawajska</option>
-
         </select>
-        <Div>
-            <input type="checkbox" id="pomidorowy" class="margin-bottom" name="pomidorowy">
-            <label for="pomidorowy">pomidorowy</label>
-            <input type="checkbox" id="czosnkowy" class="margin-bottom" name="czosnkowy">
-            <label for="czosnkowy" class="">czosnkowy</label>
-            <input type="checkbox" id="ostry" class="margin-bottom" name="ostry">
-            <label for="ostry" class="">ostry</label>
-        </Div>
-        <input type="text" name="nameC" class="margin-bottom" placeholder=" Imie i nazwisko">
+        <div>
+            <input type="checkbox" id="pomidorowy" name="pomidorowy" class="margin-bottom sosy">
+            <label for="pomidorowy">Pomidorowy</label>
+            <input type="checkbox" id="czosnkowy" name="czosnkowy" class="margin-bottom sosy">
+            <label for="czosnkowy">Czosnkowy</label>
+            <input type="checkbox" id="ostryPomidorowy" name="ostryPomidorowy" class="margin-bottom sosy">
+            <label for="ostryPomidorowy">Ostry Pomidorowy</label>
+            <input type="checkbox" id="megaostryPomidorowy" name="megaostryPomidorowy" class="margin-bottom sosy">
+            <label for="ostryPomidorowy">Mega Ostry Pomidorowy</label>
+            <input type="checkbox" id="pietruszkowy" name="pietruszkowy" class="margin-bottom sosy">
+            <label for="ostryPomidorowy">pietruszkowy</label>
+        </div>
+        <input type="text" name="nameC" class="margin-bottom" placeholder="Podaj imię i nazwisko" id="nameC">
         <br>
-        <input type="email" name="email" id="email" class="margin-bottom" placeholder="Podaj email">
+        <input type="email" name="email" class="margin-bottom" id="email" placeholder="Podaj emial">
         <br>
-        <input type="tel" name="tel" id="tel" class="margin-bottom" placeholder="Telefon kontaktowy">
+        <input type="tel" name="tel" class="margin-bottom" id="tel" placeholder="Podaj telefon">
         <br>
-        <input type="text" name="adress" id="adress" class="margin-bottom" placeholder="Adres dostawy">
+        <input type="text" name="adress" class="margin-bottom" id="adress" placeholder="Podaj adres">
         <br>
-        <textarea name="" id="msg" cols="30" rows="10" class="margin-bottom"
-            placeholder="Wiadomość dla kucharza"></textarea>
+        <textarea name="msg" id="msg" cols="30" rows="10" class="margin-bottom"
+            placeholder="wiadomości dla kucharza"></textarea>
         <br>
-        <button class="btn margin-bottom" id="id-btn">Bier</button>
-
+        <button class="btn margin-bottom" id="id-btn">Zamów</button>
     </div>
+    <input type="checkbox" name="" class="napoje">
+    <label for="cocacola">coca-cola</label>
+    <input type="checkbox" name="" class="napoje">
+    <label for="fanta">fanta</label>
     <script src="../js/main.js"></script>
-
 </body>
-
 </html>
